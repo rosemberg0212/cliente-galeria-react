@@ -30,11 +30,11 @@ export default (state, action)=>{
 		case EDITAR_FOTOS:
 			return{
 				...state,
-				fotos: state.fotos.map(foto=>{
+				/*fotos: state.fotos.map(foto=>{
 					if(foto._id === action.payload._id){
-						
+						foto.nombre = action.payload.nombre
 					}
-				})
+				})*/
 			}
 		default:
 			return state;
